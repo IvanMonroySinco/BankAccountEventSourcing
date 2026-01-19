@@ -1,0 +1,11 @@
+C:\Users\ivan.monroy\OneDrive - Sincosoft SAS\Escritorio\Nueva carpeta\BankAccountEventSourcing\BankAccount.Domain\bin\Debug\net9.0\BankAccount.Domain.deps.json
+C:\Users\ivan.monroy\OneDrive - Sincosoft SAS\Escritorio\Nueva carpeta\BankAccountEventSourcing\BankAccount.Domain\bin\Debug\net9.0\BankAccount.Domain.dll
+C:\Users\ivan.monroy\OneDrive - Sincosoft SAS\Escritorio\Nueva carpeta\BankAccountEventSourcing\BankAccount.Domain\bin\Debug\net9.0\BankAccount.Domain.pdb
+C:\Users\ivan.monroy\OneDrive - Sincosoft SAS\Escritorio\Nueva carpeta\BankAccountEventSourcing\BankAccount.Domain\obj\Debug\net9.0\BankAccount.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ivan.monroy\OneDrive - Sincosoft SAS\Escritorio\Nueva carpeta\BankAccountEventSourcing\BankAccount.Domain\obj\Debug\net9.0\BankAccount.Domain.AssemblyInfoInputs.cache
+C:\Users\ivan.monroy\OneDrive - Sincosoft SAS\Escritorio\Nueva carpeta\BankAccountEventSourcing\BankAccount.Domain\obj\Debug\net9.0\BankAccount.Domain.AssemblyInfo.cs
+C:\Users\ivan.monroy\OneDrive - Sincosoft SAS\Escritorio\Nueva carpeta\BankAccountEventSourcing\BankAccount.Domain\obj\Debug\net9.0\BankAccount.Domain.csproj.CoreCompileInputs.cache
+C:\Users\ivan.monroy\OneDrive - Sincosoft SAS\Escritorio\Nueva carpeta\BankAccountEventSourcing\BankAccount.Domain\obj\Debug\net9.0\BankAccount.Domain.dll
+C:\Users\ivan.monroy\OneDrive - Sincosoft SAS\Escritorio\Nueva carpeta\BankAccountEventSourcing\BankAccount.Domain\obj\Debug\net9.0\refint\BankAccount.Domain.dll
+C:\Users\ivan.monroy\OneDrive - Sincosoft SAS\Escritorio\Nueva carpeta\BankAccountEventSourcing\BankAccount.Domain\obj\Debug\net9.0\BankAccount.Domain.pdb
+C:\Users\ivan.monroy\OneDrive - Sincosoft SAS\Escritorio\Nueva carpeta\BankAccountEventSourcing\BankAccount.Domain\obj\Debug\net9.0\ref\BankAccount.Domain.dll

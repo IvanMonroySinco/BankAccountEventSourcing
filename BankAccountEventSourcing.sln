@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAccount.Console", "BankAccount.Console\BankAccount.Console.csproj", "{0973F908-DDC8-4609-A90B-CC4C900F78FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAccount.Domain", "BankAccount.Domain\BankAccount.Domain.csproj", "{21A596DC-572E-47A2-80E6-B342FD443B93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAccount.API", "BankAccount.API\BankAccount.API.csproj", "{30D337C9-A03E-430B-8DCE-E10C05EA94DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0973F908-DDC8-4609-A90B-CC4C900F78FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0973F908-DDC8-4609-A90B-CC4C900F78FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0973F908-DDC8-4609-A90B-CC4C900F78FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0973F908-DDC8-4609-A90B-CC4C900F78FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21A596DC-572E-47A2-80E6-B342FD443B93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21A596DC-572E-47A2-80E6-B342FD443B93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21A596DC-572E-47A2-80E6-B342FD443B93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21A596DC-572E-47A2-80E6-B342FD443B93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30D337C9-A03E-430B-8DCE-E10C05EA94DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30D337C9-A03E-430B-8DCE-E10C05EA94DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30D337C9-A03E-430B-8DCE-E10C05EA94DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30D337C9-A03E-430B-8DCE-E10C05EA94DE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

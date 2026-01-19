@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "4U4ZfqV7Grc=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ivan.monroy\\OneDrive - Sincosoft SAS\\Escritorio\\Nueva carpeta\\BankAccountEventSourcing\\BankAccount.API\\BankAccount.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ivan.monroy\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.9\\microsoft.aspnetcore.openapi.9.0.9.nupkg.sha512",
+    "C:\\Users\\ivan.monroy\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
