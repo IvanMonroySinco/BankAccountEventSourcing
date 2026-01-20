@@ -9,3 +9,4 @@ C:\Users\ivan.monroy\OneDrive - Sincosoft SAS\Escritorio\Nueva carpeta\BankAccou
 C:\Users\ivan.monroy\OneDrive - Sincosoft SAS\Escritorio\Nueva carpeta\BankAccountEventSourcing\BankAccount.Domain\obj\Debug\net9.0\refint\BankAccount.Domain.dll
 C:\Users\ivan.monroy\OneDrive - Sincosoft SAS\Escritorio\Nueva carpeta\BankAccountEventSourcing\BankAccount.Domain\obj\Debug\net9.0\BankAccount.Domain.pdb
 C:\Users\ivan.monroy\OneDrive - Sincosoft SAS\Escritorio\Nueva carpeta\BankAccountEventSourcing\BankAccount.Domain\obj\Debug\net9.0\ref\BankAccount.Domain.dll
+C:\Users\ivan.monroy\OneDrive - Sincosoft SAS\Escritorio\Nueva carpeta\BankAccountEventSourcing\BankAccount.Domain\obj\Debug\net9.0\BankAccount.Domain.sourcelink.json

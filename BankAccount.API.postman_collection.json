@@ -1,0 +1,217 @@
+{
+	"info": {
+		"_postman_id": "bank-account-event-sourcing",
+		"name": "BankAccount Event Sourcing API",
+		"description": "Colección de endpoints para la API de cuentas bancarias con Event Sourcing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://localhost:5001",
+			"type": "string"
+		},
+		{
+			"key": "accountId",
+			"value": "",
+			"type": "string"
+		}
+	],
+	"item": [
+		{
+			"name": "1. Crear Cuenta",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"if (pm.response.code === 200 || pm.response.code === 201) {",
+							"    var jsonData = pm.response.json();",
+							"    pm.collectionVariables.set(\"accountId\", jsonData.accountId);",
+							"    console.log(\"Account ID guardado: \" + jsonData.accountId);",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"accountHolder\": \"Ivan Monroy\",\n    \"initialBalance\": 1000\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/bankaccount",
+					"host": ["{{baseUrl}}"],
+					"path": ["api", "bankaccount"]
+				},
+				"description": "Crea una nueva cuenta bancaria. El ID se guarda automáticamente en la variable accountId."
+			},
+			"response": []
+		},
+		{
+			"name": "2. Obtener Cuenta",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/api/bankaccount/{{accountId}}",
+					"host": ["{{baseUrl}}"],
+					"path": ["api", "bankaccount", "{{accountId}}"]
+				},
+				"description": "Obtiene la información de una cuenta por su ID."
+			},
+			"response": []
+		},
+		{
+			"name": "3. Depositar Dinero",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"amount\": 500,\n    \"description\": \"Salario mensual\"\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/bankaccount/{{accountId}}/deposit",
+					"host": ["{{baseUrl}}"],
+					"path": ["api", "bankaccount", "{{accountId}}", "deposit"]
+				},
+				"description": "Deposita dinero en una cuenta."
+			},
+			"response": []
+		},
+		{
+			"name": "4. Retirar Dinero",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"amount\": 200,\n    \"description\": \"Pago de servicios\"\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/bankaccount/{{accountId}}/withdraw",
+					"host": ["{{baseUrl}}"],
+					"path": ["api", "bankaccount", "{{accountId}}", "withdraw"]
+				},
+				"description": "Retira dinero de una cuenta."
+			},
+			"response": []
+		},
+		{
+			"name": "5. Retirar Dinero (Fondos Insuficientes)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"amount\": 50000,\n    \"description\": \"Intento de retiro excesivo\"\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/bankaccount/{{accountId}}/withdraw",
+					"host": ["{{baseUrl}}"],
+					"path": ["api", "bankaccount", "{{accountId}}", "withdraw"]
+				},
+				"description": "Intenta retirar más dinero del disponible. Debe fallar con error de fondos insuficientes."
+			},
+			"response": []
+		},
+		{
+			"name": "6. Obtener Eventos (Historial)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/api/bankaccount/{{accountId}}/events",
+					"host": ["{{baseUrl}}"],
+					"path": ["api", "bankaccount", "{{accountId}}", "events"]
+				},
+				"description": "Obtiene el historial completo de eventos de una cuenta."
+			},
+			"response": []
+		},
+		{
+			"name": "7. Cerrar Cuenta",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"reason\": \"Cliente solicitó cierre de cuenta\"\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/bankaccount/{{accountId}}/close",
+					"host": ["{{baseUrl}}"],
+					"path": ["api", "bankaccount", "{{accountId}}", "close"]
+				},
+				"description": "Cierra una cuenta bancaria."
+			},
+			"response": []
+		},
+		{
+			"name": "8. Verificar Cuenta Cerrada",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/api/bankaccount/{{accountId}}",
+					"host": ["{{baseUrl}}"],
+					"path": ["api", "bankaccount", "{{accountId}}"]
+				},
+				"description": "Verifica que la cuenta está cerrada (IsClosed: true)."
+			},
+			"response": []
+		},
+		{
+			"name": "9. Depositar en Cuenta Cerrada (Debe Fallar)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"amount\": 100,\n    \"description\": \"Intento en cuenta cerrada\"\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/bankaccount/{{accountId}}/deposit",
+					"host": ["{{baseUrl}}"],
+					"path": ["api", "bankaccount", "{{accountId}}", "deposit"]
+				},
+				"description": "Intenta depositar en una cuenta cerrada. Debe fallar."
+			},
+			"response": []
+		}
+	]
+}

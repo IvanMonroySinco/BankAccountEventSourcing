@@ -198,3 +198,4 @@ C:\Users\ivan.monroy\OneDrive - Sincosoft SAS\Escritorio\Nueva carpeta\BankAccou
 C:\Users\ivan.monroy\OneDrive - Sincosoft SAS\Escritorio\Nueva carpeta\BankAccountEventSourcing\BankAccount.Console\bin\Debug\net9.0\BankAccount.Domain.pdb
 C:\Users\ivan.monroy\OneDrive - Sincosoft SAS\Escritorio\Nueva carpeta\BankAccountEventSourcing\BankAccount.Console\obj\Debug\net9.0\BankAccount.Console.csproj.AssemblyReference.cache
 C:\Users\ivan.monroy\OneDrive - Sincosoft SAS\Escritorio\Nueva carpeta\BankAccountEventSourcing\BankAccount.Console\obj\Debug\net9.0\BankAcco.3F94AF5C.Up2Date
+C:\Users\ivan.monroy\OneDrive - Sincosoft SAS\Escritorio\Nueva carpeta\BankAccountEventSourcing\BankAccount.Console\obj\Debug\net9.0\BankAccount.Console.sourcelink.json
